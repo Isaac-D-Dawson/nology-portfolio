@@ -1,0 +1,68 @@
+/*initialise variables here, move to seperate import later*/
+/*Main style data goes here- migrate out to sub-files as apropro*/
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .header__navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  min-width: 30%;
+}
+
+.main-content .main-content__job-description {
+  max-width: 30%;
+}
+.main-content .main-content__projects {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.main-content .main-content__projects .main-content__project-card {
+  max-width: 30%;
+}
+.main-content .main-content__projects .main-content__project-card .main-content__header-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-content .main-content__projects .main-content__project-card .main-content__card-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+.main-content .main-content__projects .main-content__project-card .main-content__card-footer .main-content__card-tag {
+  background-color: gray;
+  border-radius: 4px;
+  margin: 5px;
+}
+.main-content .main-content__about {
+  display: grid;
+  grid-template: "header image" 1fr "text   image" 1fr/1fr 1fr;
+}
+.main-content .main-content__about .main-content__about-text--header {
+  grid-area: header;
+}
+.main-content .main-content__about .main-content__about-text--content {
+  grid-area: text;
+}
+.main-content .main-content__about .main-content__about-image {
+  grid-area: image;
+}
+.main-content .main-content__contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-content {
+  background-color: gray;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}/*# sourceMappingURL=styles-main.css.map */

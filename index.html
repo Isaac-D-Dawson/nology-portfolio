@@ -5,9 +5,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Isaac Dawson's Nology Portfolio</title>
-    <link rel="stylesheet" href="styles-index.css"
+    <link rel="stylesheet" href="styles-main.css">
 </head>
 <body>
-    
+    <header class="header">
+        <h2 class="header__my-name">Isaac Dawson</h2>
+        <nav class="header__navigation">
+            <a class="header__navigation-link header__navigation-link--home">Home</a>
+            <a class="header__navigation-link header__navigation-link--about">About</a>
+            <a class="header__navigation-link header__navigation-link--contact">Comtact</a>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <h1 class="main-content__job-title">Junior Software Developer</h1>
+        <p class="main-content__job-description">This text is the small paragraph under my job title, presumably describing my job and position.</p>
+        <h2 class="main-content__portfolio-header">Portfolio</h2>
+
+        <div class="main-content__projects">
+            <div class="main-content__project-card main-content__project-card--project-1">
+                <img class="main-content__card-image">
+                <div class="main-content__header-row">
+                    <!-- little iffy about that div class but we can come back to that -->
+                    <h3 class="main-content__card-header">Project 1</h3>
+                    <div class="main-content__card-button-panel">
+                        <button class="main-content__card-button main-content__card--button-1">
+                            View Button
+                        </button>
+                        <button class="main-content__card-button main-content__card--button-2">
+                            Script Button
+                        </button>
+                    </div>
+                </div>
+                <div class="main-content__card-footer">
+                    <p class="main-content__card-tag main-content__card-tag--html">HTML</p>
+                    <p class="main-content__card-tag main-content__card-tag--scss">SCSS</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-content__about" id="about">
+            <h3 class="main-content__about-text main-content__about-text--header">About</h3>
+            <p class="main-content__about-text main-content__about-text--content">About me text will go here</p>
+            <img class="main-content__about-image">
+        </div>
+
+        <!-- Maybe seperate this from main. or merge it with the above for gridding purproses? -->
+        <div class="main-content__about-other">
+            <div class="main-content__experience">
+                Include accordion menu for work experience here
+            </div>
+            <div class="main-content__interests">
+                Include accordion menu for personal intrests/hobbies here
+            </div>
+        </div>
+
+        <div class="main-content__contact">
+            <h1 class="main-content__contact-header">
+                Get In Touch
+            </h1>
+            <button class="main-content__contact-button">
+                Contact
+            </button>
+        </div>
+    </main>
+
+    <footer class="footer-content">
+        include links to Linkedin, Github, and CV here- centered.
+    </footer>
 </body>
 </html>

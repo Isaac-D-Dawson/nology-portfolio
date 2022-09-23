@@ -1,0 +1,97 @@
+
+
+/*initialise variables here, move to seperate import later*/
+$accent-color: gray;
+
+/*Main style data goes here- migrate out to sub-files as apropro*/
+
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .header__navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+        min-width: 30%;
+    }
+}
+
+.main-content {
+
+    .main-content__job-description{
+        max-width: 30%;
+    }
+
+    .main-content__projects {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    
+    .main-content__project-card {
+
+        max-width: 30%;
+
+        .main-content__header-row {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .main-content__card-footer {
+                display: flex;
+                flex-direction: row;
+                justify-content: start;
+                align-items: center;
+
+                .main-content__card-tag {
+                    background-color: $accent-color;
+                    border-radius: 4px;
+                    margin: 5px;
+                }
+            }
+        }
+    }
+
+    .main-content__about {
+        display: grid;
+        grid-template:  "header image"  1fr
+                        "text   image"  1fr
+                        /1fr    1fr     ;
+                        // I feel this needs some padding work to make it centered.
+        
+        .main-content__about-text--header {
+            grid-area: header;
+        }
+        
+        .main-content__about-text--content {
+            grid-area: text;
+        }
+        
+        .main-content__about-image {
+            grid-area: image;
+        }
+    }
+
+    .main-content__contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .main-content__contact-button {}
+    }
+}
+
+.footer-content {
+    background-color: $accent-color;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}

@@ -1,16 +1,24 @@
 
 
 /*initialise variables here, move to seperate import later*/
-$accent-color: gray;
+
+$Background:        #2a2a2b;
+$Background__light: adjust-color($Background, $lightness: 10%);
+$Background--text:  #fafafb;
 
 /*Main style data goes here- migrate out to sub-files as apropro*/
 
+* {
+    background-color: $Background;
+    color: $Background--text;
+}
 
 .header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    
 
     .header__navigation {
         display: flex;
@@ -37,21 +45,32 @@ $accent-color: gray;
 
         max-width: 30%;
 
+        .main-content__card-image {
+            max-width: 100%;
+            border-radius: 4px;
+        }
+
         .main-content__header-row {
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
                 align-items: center;
-            }
 
-            .main-content__card-footer {
+                .main-content__card-button-panel {
+                    display: flex;
+                    flex-wrap: nowrap;
+                }
+        }
+
+        .main-content__card-footer {
                 display: flex;
                 flex-direction: row;
                 justify-content: start;
                 align-items: center;
+                flex-wrap: nowrap;
 
                 .main-content__card-tag {
-                    background-color: $accent-color;
+                    background-color: $Background__light;
                     border-radius: 4px;
                     margin: 5px;
                 }
@@ -84,12 +103,18 @@ $accent-color: gray;
         flex-direction: column;
         align-items: center;
 
-        .main-content__contact-button {}
+        .main-content__contact-button {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 5%;
+            padding-right: 5%;
+            margin: 10px;
+        }
     }
 }
 
 .footer-content {
-    background-color: $accent-color;
+    background-color: $Background__light;
 
     display: flex;
     flex-direction: row;
